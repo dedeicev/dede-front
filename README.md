@@ -18,10 +18,10 @@ yarn
 
 ## Links Uteis
 
-[https://www.figma.com/file/cLVcHBLcg4xcLPqQBtK5aR/Dede?node-id=6%3A4&t=ZoMsxrJvmaQ3Cwgw-1](FIGMA)
+Figma - https://www.figma.com/file/cLVcHBLcg4xcLPqQBtK5aR/Dede?node-id=6%3A4&t=ZoMsxrJvmaQ3Cwgw-1
 
-[https://fabricadesoftware.atlassian.net/jira/software/projects/RED/boards/2](Board-Jira)
+Board-Jira - https://fabricadesoftware.2atlassian.net/jira/software/projects/RED/boards/
 
-[https://nextjs.org/docs](Documentação-Next)
+Documentação Next - https://nextjs.org/docs
 
-[https://tailwindcss.com/docs/installation](Documentação-Tailwindcss)
+Documentação Tailwindcss - https://tailwindcss.com/docs/installation
