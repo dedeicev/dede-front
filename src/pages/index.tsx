@@ -1,12 +1,14 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Navbar from '../components/NavBar'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <>
-      <h1>Hola eu sou DEDE</h1>
+      <Navbar/>
+      <h1>Olá eu sou DEDE</h1>
     </>
   )
 }
