@@ -16,6 +16,9 @@ yarn add
 yarn 
 ```
 
+## Ambientes
+Produção - https://dede-front-production.up.railway.app/
+
 ## Links Uteis
 
 Figma - https://www.figma.com/file/cLVcHBLcg4xcLPqQBtK5aR/Dede?node-id=6%3A4&t=ZoMsxrJvmaQ3Cwgw-1
