@@ -1,6 +1,6 @@
 export default function BgCapa() {
     return(
-        <div className="bg-[url('/bg-login-and-create-account.svg')] bg-cover w-2/3 h-full text-white flex flex-col justify-center items-start px-44">
+        <div className="bg-[url('/bg-login-and-create-account.svg')] bg-cover w-2/3 h-screan text-white flex flex-col justify-center items-start px-44">
             <h2 className="text-6xl font-extralight">Soluções de dedetização eficientes para sua casa ou empresa</h2>
 
             <div className="flex items-center mt-10">
