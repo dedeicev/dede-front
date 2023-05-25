@@ -1,26 +1,32 @@
-import React from 'react'
 import { Avatar } from '@chakra-ui/react'
 
-const AgendamentoAdmin = () => {
+export default function AgendamentoAdmin() {
     return (
         <>
-        <nav className="r-[#b91c1c] fixed w-200 z-20 top-0 left-0">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <div className="flex md:order-2 justify-center items-center">
-                        <Avatar name='Thiago Rodrigo' src='https://bit.ly/dan-abramov' />
-                        <span className="text-white mx-2 hover:text-stone-50">Thiago Rodrigo</span>
+            <div className="w-[600px] flex flex-row py-5 justify-between">
+
+                <div className="flex flex-row w-2/4 justify-between">
+                    <div className="flex flex-row items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <span>08:00</span>
+                    </div>
+
+                    <div className="flex flex-row items-center">
+                        <Avatar name='Thiago Rodrigo' src='https://pbs.twimg.com/profile_images/1632560494853627904/Ijbrl_vd_400x400.jpg' />
+                        <p className="ml-2">Ryan Melo</p>
+                    </div>
                 </div>
-                    <a href="#" className="flex items-right">
-                        <img src="public/relogio.svg" className="h-8 mr-3" alt="Relogio" />
-                    </a>
-                    <span className="text-white mx-2 hover:text-stone-950">8:00</span>
+
+                <div className="flex items-center">
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </button>
+                </div>
             </div>
-        </nav>
         </>
     );
-
-
 }
-
-
-export default AgendamentoAdmin
