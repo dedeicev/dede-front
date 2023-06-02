@@ -11,13 +11,6 @@ export default function Home() {
   return (
     <>
       <Navbar/>
-
-      <Agendamento/>
-
-      <AgendamentoAdmin/>
-
-      <AgendamentoAdminAgora/>
-
     </>
   )
 }

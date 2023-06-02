@@ -11,7 +11,7 @@ export default function LayoutEmpresa(props: Props) {
                 <NavBarEmpresa/>
             </header>
 
-            <main>
+            <main className="flex flex-col items-center">
                 {props.children}
             </main>
 
