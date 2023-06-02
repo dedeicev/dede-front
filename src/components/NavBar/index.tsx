@@ -5,7 +5,7 @@ import { Avatar } from '@chakra-ui/react'
 const NavBar = () => {
     return (
         <>
-            <nav className="bg-[#CE0303] fixed w-full z-20 top-0 left-0">
+            <nav className="bg-[#CE0303] w-full top-0 left-0">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href="#" className="flex items-center">
                         <img src="img/logo-dede-branca.png" className="h-8 mr-3" alt="Dede Logo" />
@@ -27,7 +27,7 @@ const NavBar = () => {
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div>  
             </nav>
         </>
     )
