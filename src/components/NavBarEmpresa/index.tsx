@@ -7,9 +7,9 @@ export default function NavBarEmpresa() {
         <>
             <nav className="bg-[#CE0303] w-full top-0 left-0">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <Link href="/dashboard-empresa" className="flex items-center">
+                    <a href="#" className="flex items-center">
                         <img src="img/logo-dede-branca.png" className="h-8 mr-3" alt="Dede Logo" />
-                    </Link>
+                    </a>
                     <div className="flex md:order-2 justify-center items-center">
                         <div className="bg-white rounded-3xl p-2">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#CE0303" className="w-6 h-6">
