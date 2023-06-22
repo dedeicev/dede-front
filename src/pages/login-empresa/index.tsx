@@ -23,7 +23,7 @@ export default function LoginPage() {
               <input className="bg-[#F9F8F6] p-3 border-2 rounded" type="password" name="password" id="password" />
 
               <div className="flex flex-col items-center">
-                <Link className="mt-10" href="/">
+                <Link className="mt-10" href="/dashboard-empresa">
                   <button className="bg-[#CE0203] px-10 py-4 rounded text-white">Fazer Login</button>
                 </Link>
 

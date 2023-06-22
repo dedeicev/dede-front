@@ -58,7 +58,7 @@ export default function CadastroEmpresa() {
                         </div>
 
                         <div className="flex flex-col items-center">
-                            <Link className="mt-3" href="/login-empresa">
+                            <Link className="mt-3" href="/selecionarPragasEmpresa">
                                 <button className="bg-[#CE0203] px-10 py-4 rounded text-white">Cadastrar Conta</button>
                             </Link>
 
