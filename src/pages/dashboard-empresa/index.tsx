@@ -3,7 +3,6 @@ import LayoutEmpresa from "@/components/layouts/layout_empresa";
 import Calendar from 'react-calendar';
 import { useState } from "react";
 import AgendamentoAdminAgora from "@/components/AgendamentoAdmimAgora";
-import PopUpDetailsAgendamentoAdmin from "@/components/PopUpDetailsAgendamentoAdmin";
 
 
 interface Solicitacoes {
