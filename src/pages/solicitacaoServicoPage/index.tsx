@@ -12,7 +12,6 @@ export default function SolicitacaoServicoPage() {
                 <div className="flex justify-start mt-4">
                     <p className="">Tipo de Praga:</p>
                 </div>
-                
                 <div className="flex flex-row font-medium">
                     
                     <div className="flex items-center rounded bg-[#E8E8E8] mr-5 p-1">
