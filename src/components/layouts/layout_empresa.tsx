@@ -1,17 +1,14 @@
 import { useDisclosure } from "@chakra-ui/react";
 import NavBarEmpresa from "../NavBarEmpresa";
+import Footer from "../footer";
 
 interface Props {
     children: any,
 }
 
 export default function LayoutEmpresa(props: Props) {
-
-    const { isOpen, onOpen, onClose } = useDisclosure()
-
-
     return(
-        <>
+        <div className="w-full h-screen flex flex-col justify-between">
             <header className="">
                 <NavBarEmpresa/>
             </header>
@@ -20,7 +17,9 @@ export default function LayoutEmpresa(props: Props) {
                 {props.children}
             </main>
 
-            <footer></footer>
-        </>
+            <footer>
+                <Footer/>
+            </footer>
+        </div>
     );
 }
