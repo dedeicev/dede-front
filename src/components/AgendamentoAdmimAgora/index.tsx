@@ -3,7 +3,7 @@ import { Avatar } from "@chakra-ui/react";
 export default function AgendamentoAdminAgora() {
     return (
         <>
-            <div className="w-[600px] bg-[#9F0B0C] flex flex-row py-5 px-3 justify-between text-white rounded-lg">
+            <div className="w-[600px] bg-[#9F0B0C] flex flex-row py-5 px-3 justify-between text-white rounded-lg mb-5">
                 <div className="flex flex-row items-center">
                     <Avatar name='Thiago Rodrigo' src='https://pbs.twimg.com/profile_images/1632560494853627904/Ijbrl_vd_400x400.jpg' />
                     <p className="ml-2">Ryan Melo</p>
