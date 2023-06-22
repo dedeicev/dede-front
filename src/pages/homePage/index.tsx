@@ -1,10 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import NavBar from "@/components/NavBar";
+import PopUp from "@/components/PopUp";
+import { Fragment, useState } from "react";
 
 
 export default function HomePage() {
+    const [showPopup,setShowPopUp] = useState(false);
     return(
         <>
+        <Fragment>
         <NavBar/>
         <div className="flex flex-col">
             <div className="flex flex-row px-12 py-10 justify-between">
@@ -23,37 +27,38 @@ export default function HomePage() {
             </div>
             <p className="flex self-center text-2xl p-10">SERVIÇOS</p>
             <div className="flex flex-row justify-between px-10">
-                <div>
+                <button onClick={() => setShowPopUp(true)}>
                     <img src="/controle_de_ratos.svg" alt="" />
-                </div>
-                <div>
+                </button>
+                <button>
                     <img src="/controle_de_barata.svg" alt="" />
-                </div>
-                <div>
+                </button>
+                <button>
                     <img src="/controle_de_cupins.svg" alt="" />
-                </div>
-                <div>
+                </button>
+                <button>
                     <img src="/controle_de_insetos.svg" alt="" />
-                </div>
+                </button>
             </div>
             <p className="flex self-center text-2xl p-10">EMPRESAS BEM AVALIADAS</p>
             <div className="flex flex-row justify-between px-10 mb-20">
-                <div>
+                <button>
                     <img src="/empresas_avaliadas.svg" alt="" />
-                </div>
-                <div>
+                </button>
+                <button>
                     <img src="/empresas_avaliadas.svg" alt="" />
-                </div>
-                <div>
+                </button>
+                <button>
                     <img src="/empresas_avaliadas.svg" alt="" />
-                </div>
-                <div>
+                </button>
+                <button>
                     <img src="/empresas_avaliadas.svg" alt="" />
-                </div>
+                </button>
             </div>
 
         </div>
-
+        <PopUp isVisible={showPopup} onClose={() => setShowPopUp(false) }/>
+        </Fragment>
         </>
     )
 }
