@@ -1,3 +1,4 @@
+import { useDisclosure } from "@chakra-ui/react";
 import NavBarEmpresa from "../NavBarEmpresa";
 
 interface Props {
@@ -5,13 +6,17 @@ interface Props {
 }
 
 export default function LayoutEmpresa(props: Props) {
+
+    const { isOpen, onOpen, onClose } = useDisclosure()
+
+
     return(
         <>
-            <header>
+            <header className="">
                 <NavBarEmpresa/>
             </header>
 
-            <main className="flex flex-col items-center">
+            <main className="w-full h-full flex flex-col items-center">
                 {props.children}
             </main>
 

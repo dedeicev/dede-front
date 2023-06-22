@@ -2,6 +2,8 @@ import AgendamentoAdmin from "@/components/AgendamentAdmin";
 import LayoutEmpresa from "@/components/layouts/layout_empresa";
 import Calendar from 'react-calendar';
 import { useState } from "react";
+import AgendamentoAdminAgora from "@/components/AgendamentoAdmimAgora";
+import PopUpDetailsAgendamentoAdmin from "@/components/PopUpDetailsAgendamentoAdmin";
 
 interface Solicitacoes {
     id: number,
@@ -11,7 +13,7 @@ interface Solicitacoes {
 }
 
 const solicitacoes: Solicitacoes[] = [
-    {   
+    {
         id: 1,
         avatar: "https://media.discordapp.net/attachments/1100930613218910220/1113636437108203590/12922bfa-e2af-4e15-b263-d7d4d44c52af.jpg?width=300&height=533",
         nomeCliente: "Caio Nunes",
@@ -42,25 +44,38 @@ export default function DashboardEmpresa() {
     const [value, onChange] = useState<Date>(new Date());
 
 
-    return(
+    return (
         <LayoutEmpresa>
-            <div>
-                {   
-                    solicitacoes.map(solicitacao => (
-                        <AgendamentoAdmin
-                            key={solicitacao.id}
-                            avatar={solicitacao.avatar}
-                            nomeCliente={solicitacao.nomeCliente}
-                            hora={solicitacao.hora}
-                        />
-                    ))
-                }
 
-            
-                <Calendar 
-                    value={value}
-                    className="border border-[#CE0203] bg-[#F9F9F9] w-[250px] p-5 rounded-2xl"
-                />
+            <div className="flex flex-row mt-7">
+                <div>
+                    <div className="w-[600px] items-start mb-5">
+                        <h2 className="text-3xl font-bold">Serviços Agendados</h2>
+                        <p className="text-[#9F0B0C]">Hoje  |  Dia 05  |  Domingo</p>
+                    </div>
+
+                    <AgendamentoAdminAgora />
+
+                    <p className="">Manhã</p>
+                    <hr />
+                    {
+                        solicitacoes.map(solicitacao => (
+                            <AgendamentoAdmin
+                                key={solicitacao.id}
+                                avatar={solicitacao.avatar}
+                                nomeCliente={solicitacao.nomeCliente}
+                                hora={solicitacao.hora}
+                            />
+                        ))
+                    }
+                </div>
+
+                <div className="ml-20">
+                    <Calendar
+                        value={value}
+                        className="border border-[#CE0203] bg-[#F9F9F9] w-[250px] p-5 rounded-2xl"
+                    />
+                </div>
             </div>
 
         </LayoutEmpresa>
