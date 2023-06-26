@@ -17,7 +17,7 @@ const NavBar = () => {
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                         <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
                             <li>
-                                <Link href="#" className="block py-2 pl-3 pr-4 text-white rounded md:p-0 hover:text-stone-700 dark:text-white" aria-current="page">Início</Link>
+                                <Link href="/homePage" className="block py-2 pl-3 pr-4 text-white rounded md:p-0 hover:text-stone-700 dark:text-white" aria-current="page">Início</Link>
                             </li>
                             <li>
                                 <Link href="#" className="block py-2 pl-3 pr-4 text-white rounded md:p-0 hover:text-stone-700 dark:text-white">Serviços</Link>

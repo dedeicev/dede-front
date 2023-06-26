@@ -1,7 +1,7 @@
 import BgCapa from "@/components/bgCapa";
 import Link from "next/link";
 
-export default function LoginPage() {
+export default function LoginPageEmpresa() {
     return (
       <>
         <div className="w-full h-screen flex flex-row justify-between">

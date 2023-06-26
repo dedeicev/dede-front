@@ -1,4 +1,5 @@
 import NavBar from "@/components/NavBar";
+import Link from "next/link";
 
 
 export default function SolicitacaoServicoPage() {
@@ -68,7 +69,9 @@ export default function SolicitacaoServicoPage() {
                 </div>
 
                 <div className="mt-8">
-                    <button className="bg-[#CE0203] px-10 py-4 rounded text-white"> Solicitar Serviço</button>
+                    <Link href="/homePage">
+                        <button className="bg-[#CE0203] px-10 py-4 rounded text-white"> Solicitar Serviço</button>
+                    </Link>
                 </div>
 
             </div>
