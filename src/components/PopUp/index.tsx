@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
-export default function PopUp({isVisible, onClose}) {
+export default function PopUp({isVisible, onClose} : any) {
     if (!isVisible) return null;
     return(
         <>
