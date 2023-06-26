@@ -4,13 +4,14 @@ import Agendamento from '@/components/Agendamento'
 import AgendamentoAdmin from '@/components/AgendamentAdmin'
 import AgendamentoAdminAgora from '@/components/AgendamentoAdmimAgora'
 import NavBarEmpresa from '@/components/NavBarEmpresa'
+import DashboardEmpresa from './dashboard-empresa'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <>
-      <Navbar/>
+      <DashboardEmpresa/>
     </>
   )
 }
