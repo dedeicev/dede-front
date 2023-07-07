@@ -3,7 +3,7 @@ export default function Agendamento() {
         <>
             <div className="w-[600px] bg-[#F5F5F5] flex flex-row py-5 rounded-xl">
                 <div className="w-full flex flex-col justify-center itens-center pl-12 pr-3">
-                    <p className="text-black text-lg font-medium">Destetização convencional</p>
+                    <p className="text-black text-lg font-medium">Dedetização convencional</p>
                 </div>
 
                 <div className="flex flex-col w-full items-center justify-center pl-8 pr-16">
