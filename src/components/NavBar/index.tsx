@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
+/* eslint-disable @next/next/no-html-link-for-pages */
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { Avatar, Button, IconButton, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react'
@@ -31,7 +33,7 @@ const NavBar = () => {
                                         </div>
                                     </MenuButton>
                                     <MenuList>
-                                        <MenuItem><Link href="#">Editar Perfil</Link></MenuItem>
+                                        <MenuItem><Link href="/configPerfilPage">Editar Perfil</Link></MenuItem>
                                         <MenuItem><Link href="#">Configurações</Link></MenuItem>
                                         <MenuItem><Link href="/loginPage">Sair</Link></MenuItem>
                                     </MenuList>
