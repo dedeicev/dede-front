@@ -1,12 +1,12 @@
 import NavBar from "@/components/NavBar";
+import LayoutCliente from "@/components/layouts/layout_cliente";
 import Link from "next/link";
 
 
 export default function SolicitacaoServicoPage() {
     return(
-        <>
-        <NavBar/>
-        <div className="flex flex-col items-center">
+        <LayoutCliente>
+            <div className="flex flex-col items-center">
                 <div className="mt-7">
                     <p className="text-lg font-medium">Para solicitar o serviço preencha os campos abaixo:</p>
                 </div>
@@ -74,7 +74,7 @@ export default function SolicitacaoServicoPage() {
                     </Link>
                 </div>
 
-            </div>
-        </>
+            </div> 
+        </LayoutCliente>
     )
 }
